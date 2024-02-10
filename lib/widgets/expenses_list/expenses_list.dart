@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:expense_tracker/models/expense.dart';
 
 class ExpensesList extends StatelessWidget {
-  ExpensesList({
+  const ExpensesList({
     super.key,
     required this.expenses,
     required this.onRemoveExpense,
   });
 
   final List<Expense> expenses;
-  void Function(Expense expense) onRemoveExpense;
+  final void Function(Expense expense) onRemoveExpense;
 
   @override
   Widget build(BuildContext context) {
